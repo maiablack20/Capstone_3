@@ -1,0 +1,25 @@
+# My Process For Cleaning The Data and The Visuals
+
+## Data Cleaning
+
+For the data cleaning portion of my analysis, the first thing I had done was import all of the data from the Excel file, the sales data, and the .txt file, the book and author table. This was fairly easy to do since it was just importing the data for my analysis. However, the table that stumped me the most was the Management Team table because there were a lot of null values for the region and director columns. I was able to successfully clean that data table and fill in the areas with null values successfully by creating conditional columns, which used the if/else statements, that replaced the original director and region columns. 
+
+For the store manager column, I had decided to leave the names of the two store managers in one column together because when attempting to separate them, I was running into an error where Power BI had considered them to be duplicate values for the state column, which I knew not to be true, but I decided to keep them together rather than separate them. This made it a lot more easier for me in regards to this and there were no issues with duplicates after that. 
+
+As for the Store Sales and Online Sales tables, I made sure change the values for them into currency and rounded them to the second decimal place. For this, some of the values with the number zero at the end just say something like "14.4", which I assume is Power BI not including the zero for some reason and I left that alone since it did not skew the data when it came to obtaining the sum of the values. 
+
+For the "book list" table, I had cleaned the data in a way where I got rid of the word "by", which indicated the title of the book and the name of the author that wrote the book. This made it easy to split them up because then I could obtain the name of the book that was the highest selling and the name of the author that was the highest selling as well. It also helped to remove the numbers because for my audience, it can become a little confusing to see the number on the list that book is and think of it as the rank number when that is not the case at all. 
+
+## Merging Tables 
+
+For this, I ran into the most trouble with the merging of the Book List and the Products Table. At first, I had merged the products table onto the Book List using Category for the join, then merged Prod Num, but that turned out to give me duplicates for them, especially for the books. I went through a lot of trial and error with merging Book List and Products. At some points, I even attempted a fuzzy join, but that yielded the same results or gave me errors before I finally merged the Book column on the Product Table, using Category for it and that gave me the results I needed, plus it also populated the names of the authors for the books under the Product column for the Products Table. 
+
+When it came to joining the other tables, I had minimal issues with merging and sometimes would get null values, which I had managed to correct when I went back and re-thought what column I was merging onto the table. 
+
+## Adding Measures and Custom Columns 
+
+When I was working in the Management Team table, I found that during the data cleaning process that there were null values for the director column and the region column. This stumped me a little bit because I did not know how to input those values in Power BI. However, I found out through trial error that I could create a new column under the conditional column tab where I could use if/else statements to say if region was Northeast, then their director would be one of the directors listed and the same went for if the state was Texas then the region was south for them. This helped me greatly rather than just typing replace values, would have performed a batch replacement of the values rather than just one at a time. 
+
+For the analysis portion, I had created a revenue measure under the products table, which was logical for me to do because I could obtain the top selling books and authors from this. In doing so, I was able to obtain the information I needed spanning through the four years of data. The revenue measure was helpful in obtaining the sales data I needed for my visuals overall on each page. 
+
+When it came to my visuals, I had placed the donut/pie chart, the line chart, and the bar chart on the same page for the sales summary and then I created the second page specifically for Top Selling Books and Authors as well. I decided to give Top Selling Books and Authors their own page because I did create a list for both and then I also decided to create a pie chart each as well just to show the top selling books and their authors. 
