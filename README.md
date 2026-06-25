@@ -10,6 +10,10 @@
 
   ### Microsoft Power BI will also be used to create the visuals and complete my analysis, but I shall also use it to publish the visuals and create dashboards on the web version of it. I will also use Power BI to make sure that I have also created mobile versions of my charts as well that I mentioned before. 
 
+  Link to Visuals: https://app.powerbi.com/groups/me/reports/8241b424-b6ff-41ca-97e3-842d22bb8083/8c3b1d78a2ab31e13d58?experience=power-bi
+
 ## Presentation 
 
   ### For my overall presentation, I shall use canva for the template as I have before and I will then download the design template to powerpoint in order to edit the template to what I have used before in my previous capstones while also keeping in mind to make sure that my visuals do not distract my audience or take their eyes off of things. My presentation will contain visuals from my Power BI analysis and my key insights and recommendations as well. 
+
+  Link to Presentation: https://yearuptemp-my.sharepoint.com/:v:/g/personal/mblack_my_yearupunited_org/IQB7i8JC-FSwTYc7c1Y6eqweAbCSWsjbyCM9v5q-6TK9zI8?e=7xMWkS
